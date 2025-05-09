@@ -12,7 +12,7 @@ phases:
       - cp appspec.yml build/
       - chmod -R +x scripts/
       - cp -r scripts/ build/
-      
+
 artifacts:
   files:
     - '**/*'
