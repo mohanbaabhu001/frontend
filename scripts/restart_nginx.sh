@@ -1,3 +1,8 @@
 #!/bin/bash
 echo "Restarting NGINX..."
-systemctl restart nginx
+
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+echo "NGINX restarted successfully."
+
