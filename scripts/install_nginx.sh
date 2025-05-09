@@ -1,4 +1,8 @@
 #!/bin/bash
 echo "Installing NGINX..."
-apt-get update
-apt-get install -y nginx
+
+# Run as root (CodeDeploy runs as root per your appspec)
+sudo apt-get update -y
+sudo apt-get install -y nginx
+
+echo "NGINX installation completed."
